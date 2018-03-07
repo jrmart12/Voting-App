@@ -17,4 +17,5 @@ return (
 {productComponents}
 </div>
 );
-}}
+}
+}
