@@ -1,4 +1,3 @@
-
 class Product extends React.Component {
 	handleUpVote = () => (
 		this.props.onVote(this.props.id)

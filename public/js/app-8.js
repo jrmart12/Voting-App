@@ -1,8 +1,11 @@
-
 class Product extends React.Component {
-	handleUpVote = () => (
-		this.props.onVote(this.props.id)
-	);
+	constructor(props) {
+		super(props);
+		this.handleUpVote = this.handleUpVote.bind(this);
+	}
+	handleUpVote() {
+		this.props.onVote(this.props.id);
+	}
 	render() {
 		<div className='middle aligned content'>
 		<div className='header'>
@@ -48,4 +51,3 @@ ReactDOM.render(
   <ProductList />,
   document.getElementById('content')
 );
-
